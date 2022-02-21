@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Major Application</title>
+
+</head>
+<body>
+
+<h2>Major Application</h2>
+
+<form action="http://gclass.alexburner.com/formtest.php" method="post">
+   
+    <fieldset>
+		<legend>UW Account</legend>
+		<div class="field">
+			<label>Email:</label> 
+			<input type="text" name="email">
+		</div>
+		<div class="field">
+			<label>Password:</label> 
+			<input type="password" name="password">
+		</div>
+		<div class="field">
+			<label>Repeat password:</label> 
+			<input type="password" name="password_r">
+		</div>
+  </fieldset>
+  
+  <fieldset>
+    <legend>Personal Information</legend>
+    <div class="field">
+        <label>First Name:</label> 
+        <input type="text" name="firstname"><br>
+        <label>Last Name:</label>
+        <input type="text" name="lastname">
+    </div>
+        <label>Birthday:</label>
+        <br/>
+        <label for="datemax">Enter a date </label>
+        <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+        <label for="datemin">Enter a date</label>
+        <input type="date" id="datemin" name="datemin" min="2000-01-02">
+      </form>
+    <div class="field">
+        <label>Year of Graduation:</label>
+        <select name="year">
+        <option value="" selected="true">Choose a year</option>
+            <option value="19">2019</option>
+            <option value="20">2020</option>
+            <option value="21">2021</option>
+            <option value="22">2022</option>
+        </select>
+    </div>
+    <div class="field">
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="female"> Female<br>
+          <input type="radio" name="gender" value="male"> Male<br>
+          <input type="radio" name="gender" value="other"> Other
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>Grade</legend>
+    <div class="field">
+        <label>GPA</label> 
+        <input type="number" max="4.0" min="0" id="score">
+    </div>
+    <div class="field">
+        <label>What type of degress are you seeking? (check all that apply)</label>
+        <ul>
+            <li><input type="checkbox" name="degree" value="BA">Bachelor of Art</li>
+            <li><input type="checkbox" name="degree" value="BS">Bachelor of Science</li>
+        </ul>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>Major</legend>
+    <div class="field">
+			<label>Which department you want to apply</label>
+			<select name="major">
+				<option value="" selected="true">Choose a department</option>
+				<option value="College of Arts and Sciences">College of Arts and Sciences</option>
+				<option value="College of Built Environments">College of Built Environments</option>
+				<option value="Foster School of Business">Foster School of Business</option>
+				<option value="School of Dentistry">School of Dentistry</option>
+				<option value="College of Education">College of Education</option>
+				<option value="College of Engineering">College of Engineering</option>
+				<option value="College of the Environment">College of the Environment</option>
+				<option value="Honors (UAA)">Honors (UAA)</option>
+				<option value="The Information School">The Information School</option>
+				<option value="Interdisciplinary Graduate Programs">Interdisciplinary Graduate Programs</option>
+				<option value="Interdisciplinary Undergraduate Programs">Interdisciplinary Undergraduate Programs</option>
+				<option value="School of Law">School of Law</option>
+				<option value="School of Medicine">School of Medicine</option>
+				<option value="School of Nursing">School of Nursing</option>
+				<option value="School of Pharmacy">School of Pharmacy</option>
+				<option value="School of Public Health">School of Public Health</option>
+				<option value="Evans School of Public Policy and Governance">Evans School of Public Policy and Governance</option>
+				<option value="School of Social Work">School of Social Work</option>
+				<option value="Undergraduate Academic Advising">Undergraduate Academic Advising</option>
+			</select>
+            </div>
+            <div class="radio">
+			<label>Will you choose minor after entering the major?</label> 
+			<input type="radio" name="legal" value="yes">Yes
+			<input type="radio" name="legal" value="no">No
+		</div>
+
+    </div>
+</fieldset>
+<fieldset>
+    <legend>Personal Statement</legend>
+    <div class="field">
+        <label>1. Video essay</label><br>
+        <textarea name="project" rows="6" cols="60">Create a video no longer than one minute in length that describes a unique perspective, skill set, or life experience you have.</textarea>
+        <br/>
+        <input type="file"/> Upload the video
+    </div>
+    <br/>
+    <div class="field">
+        <label>2. Why do you choose this major? (300 words maximum)</label><br>
+        <input type="file"/>Upload Personal Statement essay
+    </div>
+    <br/>
+    <div class="field">
+        <label>3. Additional Information that you would like us to know:</label><br>
+        <textarea name="project" rows="6" cols="60"></textarea>
+    </div>
+</fieldset>
+<input type="submit" value="Submit form">
+</form>
+</body>
+</html>
